@@ -34,7 +34,7 @@ class Bot(Client):
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Skybotsupport for support")
                 sys.exit()
                 
-        if FORCE_SUB_CHANNEL:
+        if FORCE_SUB_GROUP:
             try:
                 link = await self.export_chat_invite_link(FORCE_SUB_GROUP)
                 self.invitelink = link
