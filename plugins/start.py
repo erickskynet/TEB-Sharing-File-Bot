@@ -102,6 +102,7 @@ async def not_joined(client: Client, message: Message):
     except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Join Channel", url = client.invitelink)]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Join Group", url = client.invitelink)]])
     await message.reply(
         text = text,
         reply_markup = reply_markup,
